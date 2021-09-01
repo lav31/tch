@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/modulestyle.css">
+    <title>C Module- Team Code Hunters</title>
+</head>
+<body>
+    <div class="topsection">
+        <h1>C Programming - Module 2</h1>
+        <div class="btns">
+            <a href="/Cmodules/cmodule1.html" class="pvs">Previous</a>
+            <a href="/Cmodules/cmodule3.html" class="nxt">Next</a>
+        </div>
+    </div>
+    
+    <div class="learning">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2 class="hdteam">Instructions in C</h2>
+                    <p>A Program is just a set of Instructions. Specific Instruction help  us to achieve Specific type of task in a Program. 
+                        <br><br>
+                        <b>Types of Instructions</b> <br><br>
+                        There are three types of Instructions in C, as follows <br>
+                        a) Type Declaration Instruction : <br>
+                        This Instruction is used to declare the type of variable used in C Program. <br> <br>
+                        b) Arithmetic Instruction : <br>
+                        This Instruction is used to perform arithmetic operation on constant or variable. <br><br>
+                        c) Control Instruction : <br>
+                        This Instruction is used to Control the sequence of execution of various statements in a c Program. <br><br>
+                        <b>Type Declaration Instruction</b> <br><br>
+                        The type declaration statement is written at the beginning of <b>main()</b> function. <br>
+                        Example, <br>
+                        int bas; <br>
+                        float grossal; <br>
+                        char name; <br>
+                        We can also initialise the variable while declaring, as follows <br>
+                        int num = 5, i = 10; <br>
+                        float avg = 10.5, j = 3.5 <br>
+                        
+                        <br><br>
+                        <b>Arithmetic Instruction</b> <br><br>
+                        An arithmetic statement consist variable name on left hand side of '=' and they connected with operator on right hand side of '='. For Example, <br>
+                        int i, a = 2; <br>
+                        i = a + 5; <br><br>
+                        Arithmetic statement in C could be of three types, as <br>
+                        1) Integer mode : In this statement, all operands are either integer variables or integer constants. <br>
+                        2) Real mode : In this statement, all operands are either real variables or real constants. <br>
+                        3) Mixed mode : In this statement, some operands are integer and some are real. <br> <br>
+                        Arithmetic operations can be performed on int, float and char. So following statements are valid. <br>
+                        char x = 'a', y = 'b'; <br>
+                        int z = x + y; <br> <br>
+                        <b>Integer and Float Conversions</b> <br><br>
+                        As to do Programming in C effectively you have to understand the rules used for implicit conversion of floating point and integer values. These are mentioned below <br><br>
+                        a) An arithmetic operation between an integer and integer always yields an integer result. Same as for operation between two real yields real result. <br> <br>
+                        b) An operation between an integer and real always yields a real result. In this operation, the integer is first promoted to a real and then the operation is performed. Hence the result is real. <br> <br>  
+                        Let's have a look on it. <br>
+                    </p>
+                    <table border="">
+                        <tr>
+                            <th>Operation</th>
+                            <th>Result</th>
+                        </tr>
+                        <tr>
+                            <td>5/2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>5.0/2</td>
+                            <td>2.5</td>
+                        </tr>
+                        <tr>
+                            <td>5/2.0</td>
+                            <td>2.5</td>
+                        </tr>
+                        <tr>
+                            <td>5.0/2.0</td>
+                            <td>2.5</td>
+                        </tr>
+                    </table>
+                    <p>
+                        <b>Type conversion in Assigments</b> <br><br>
+                        If the type of expression on RHS and LHS of '=' are not same then the value of the expression on RHS is promoted or demoted depending on the type of variable on LHS of '='. For Example consider the following statements. <br>
+                        int i; <br>
+                        i = 3.5; <br>
+                        Here, though 3.5 is a <strong>float</strong>, it cannot be stored in  i since it is an <strong>int</strong>. Hence 3.5 is demoted to 3 and then stored in i. <br><br>
+                        <b>Hierarchy of operations</b>
+                    </p>
+                    <table border="">
+                        <tr>
+                            <th>Priority</th>
+                            <th>Operations</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>1st</td>
+                            <td>* / %</td>
+                            <td>Multiplication, Division, Modular</td>
+                        </tr>
+                        <tr>
+                            <td>2nd</td>
+                            <td>+ -</td>
+                            <td>Addition, Substraction</td>
+                        </tr>
+                        <tr>
+                            <td>3rd</td>
+                            <td>=</td>
+                            <td>Assigment</td>
+                        </tr>
+                    </table>
+                    <p>
+                        <b>Associativity of Operators</b> <br><br>
+                        When an expression two operators of equal priority, the tie between them is settled using the associativity of the operator. <br>
+                        All operator in C either have left to right associativity or right to left associativity. For Example, <br>
+                        a = 3/2*5; <br>
+                        Here there is a tie between operators of same priority, that is between / and *. Both enjoy left to right associativity. Therefore firstly / operation is done following by *. <br><br><br>
+                        <b>Control Instructions</b> <br><br> 
+                        Control Instructions control the order in which the instructions in a program get executed. In other words, the control instructions determine the <strong>Flow of Control</strong> in a Program. <br>
+                        We will learn about it in further modules. <br>
+                    </p>
+                    <p><strong>Some Sample Programs</strong><br><br>
+                        <b>1.</b> If a five-digit number is input through the keyboard, Write a program to reverse the number. <br><br>
+                        <img src="/ccodeimg/module02p1.png" alt="" class="midlargeprogram"> <br>
+                    </p> <br><br><br>
+                    <p><strong>Time to Brainstrom :)</strong> <br><br>
+                        <b>[1]</b> Point out the errors, if any : <br><br>
+                        <b>(a)</b> x = (y+3); <br>
+                        <b>(b)</b> 4/3*3.14*r*r*r = vol_of_sphere; <br>
+                        <b>(c)</b> count = count+1; <br>
+                        <b>(d)</b> 3 = b = 4 = a; <br>
+                        <b>(e)</b> char ch = '25April12'; <br><br>
+                        <b>[2]</b> Evaluate the following expressions and show their Hierarchy <br><br>
+                        <b>(a)</b> ans = 5*b*b*x-3*a*y*y-8*b*b*x+10*a*y; <br>
+                        <b>(b)</b> s = c+a*y*y/b; <br><br>
+                        <b>[3]</b> State whether the following statements are True or False : <br><br>
+                        <b>(a)</b> [] and {} can be used in Arithmetic instructions. <br>
+                        <b>(b)</b> In C ** operator is used for exponentiation operation. <br>
+                        <b>(c)</b> % operator cannot be used with floats. <br>
+                        <b>(d)</b> In C, Arithmetic instruction cannot contain constants on left side of =. <br><br>
+                        <b>[4]</b> Attempt the following questions : <br><br>
+                        <b>(1)</b> If a five digit number is input through the keyboard, write a program to calculate the sum of its digits. <br><br>
+                        <b>(2)</b> If value of an angle is input through the keyboard, write a program to print all its Trigonometric ratios. <br>
+                    </p>
+                    <h4>End of module 2</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/default-monochrome-white.svg" alt="">
+                <h3>TEAM CODE HUNTERS</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <a href="/learning.html">Learning</a>
+                    </li>
+                    <li>
+                        <a href="https://www.concealedangle.in/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contactform.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/join.html">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>Copywrite 2021 by Team Code Hunters. Site developed by <span>Lav Sharma</span> </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/modulestyle.css">
+    <title>C Module- Team Code Hunters</title>
+</head>
+<body>
+    <div class="topsection">
+        <h1>C Programming - Module 3</h1>
+        <div class="btns">
+            <a href="/Cmodules/cmodule2.html" class="pvs">Previous</a>
+            <a href="/Cmodules/cmodule4.html" class="nxt">Next</a>
+        </div>
+    </div>
+    
+    <div class="learning">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2 class="hdteam">Decision Control Statement in C</h2>
+                    <p>
+                        In C programs we must be able to perform different sets of actions depending on the circumstances. To implement complicated logics, our programs has to take decisions. In C Programming, such situations are dealt with using a decision control instruction. <br><br>
+                        <b>The <em>if-else</em> Statement</b> <br><br>
+                        C uses the keyword <b><em>if</em></b> and <b><em>else</em></b> to implement the decision control instruction. <br>
+                        General form : <br><br>
+                        if(this condition is true) <br>
+                        <em>Statement1;</em> <br>
+                        else <br>
+                        <em>Statement2;</em> <br><br>
+                        The condition following the keyword <b>if</b> is always enclosed within a pair of parenthese. If the condition is true, then Statement1 is executed. If the condition is not true, then Statement2 is executed. The condition is expressed using 'relational' operators in C, with these operators we can compare two values. <br><br>
+                        <table border="">
+                            <tr>
+                                <th>this expression</th>
+                                <th>is true if</th>
+                            </tr>
+                            <tr>
+                                <td>x == y</td>
+                                <td>x is equal to y</td>
+                            </tr>
+                            <tr>
+                                <td>x != y</td>
+                                <td>x is not equal to y</td>
+                            </tr>
+                            <tr>
+                                <td>x < y</td>
+                                <td>x is less than y</td>
+                            </tr>
+                            <tr>
+                                <td>x > y</td>
+                                <td>x is grater than y</td>
+                            </tr>
+                            <tr>
+                                <td>x <= y</td>
+                                <td>x is less than or equal to y</td>
+                            </tr>
+                            <tr>
+                                <td>x >= y</td>
+                                <td>x is greater than or equal to y</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <b>Let's see an example:</b> <br><br>
+                        While purchasing certain items, a discount of 10% is offered if the quantity purchased is more than 1000. If quantity and price per item are input through the keyboard, write a program to calculate the total expenses. <br><br>
+                        <img src="/ccodeimg/module03p1.png" alt="" class="middleprogram"><br><br>
+                        <b>Output</b><br>
+                        <em>Enter quantity and rate 1200 15.50</em><br>
+                        <em>Total expenses = Rs. 3100.000000</em> <br><br><br><br>
+                        <b>Multiple Statements within <em>if-else</em></b><br><br>
+                        Many times in a C progam we want more than one Statement to be executed when the the condition is true. So for more than one Statement, they must be within a pair of braces '{}'. <br><br>
+                        <b>Example: </b>In a company an employee is paid as under: <br>
+                        If his basic salary is less than Rs. 1500, then HRA = 10% of basic salary and DA = 90% of basic salary. If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. IF employee's salary is input through the keyboard write a program to find his gross salary. <br><br>
+                        <img src="/ccodeimg/module03p2.png" alt="" class="middleprogram"><br><br><br>
+                        <b>Nested <em>if-else</em> Statements</b> <br><br>
+                        It is OKAY to write another <b>if-else</b> within either <b>if</b> block or <b>else</b> block as if we want to check a condition furhter. This is called <em>Nesting</em>. It is done as follows <br><br>
+                        <b>if(i == 1)</b><br>
+                         printf("You would go to heaven !\n"); <br>
+                        <b>else</b> <br>
+                        {<br>
+                            if(i == 2) <br>
+                            <em>printf("Hell was created with you in mind\n");</em> <br>
+                            else <br>
+                            <em>printf("How about mother earth !\n");</em> <br>
+                        } <br>
+                        <br><br>
+                        <b>A Word of Caution</b><br><br>
+                        In C a non-zero value is considered to be true, whereas a 0 is considered to be false. So in the following examples all <b>printf()</b> Statements are executed. <br><br>
+                        if(3 + 2 % 5) <br>
+                        <em>printf("This works");</em><br>
+                        if(a = 10) <br>
+                        <em>printf("Even this works");</em><br>
+                        if(-5) <br>
+                        <em>printf("Yes, this is also works");</em><br>
+                        <br><br>
+                        <b>Using Logical Operators for checking Ranges</b><br><br>
+                        In C we allow to use three logical operators, namely, &&, ||, !. These are read as 'AND', 'OR' and 'NOT' respectively. Let us see how these can be used with the help of an example <br><br>
+                        <b>Example:</b> The marks obtained by a student in 5 different subjects are input through the keyboard. The student get a division as per the following rules: <br>
+                        Percentage above or equal to 60 - First Division <br>
+                        Percentage between 50 and 59 - Second Division <br>
+                        Percentage between 40 and 49 - Third Division <br>
+                        Percentage less than 40 - Fail <br>
+                        Write a Program to calculate the division obtained by the student. <br><br>
+                        <img src="/ccodeimg/module03p3.png" alt="" class="middleprogram">
+                        <br><br><br>
+                        <b>The <em>else if</em> Clause</b><br><br>
+                        Let us now write Previous example with if else ladder. <br><br>
+                        <img src="/ccodeimg/module03p4.png" alt="" class="smallprogram">
+                        <br><br><br>
+                        <b>Use of Logical Operators- Yes/No Problem</b> <br><br>
+                        Logical operators are also very useful is when we want to write a programs for complicated logics that ultimately boil down to only two answers - yes or no. Let see an example <br><br>
+                        <b>Example: </b>A company insures its drivers in the following cases : <br>
+                        - If the driver is married. <br>
+                        - If the driver is unmarried, male & above 30 years of age. <br>
+                        - If the driver is unmarried, female & above 25 years of age. <br>
+                        In all other cases, the driver is not the insured. If the martial status, sex and age of the driver are the inputs, write a program whether the driver should be insured or not. <br><br>
+                        <img src="/ccodeimg/module03p5.png" alt="" class="middleprogram">
+                        <br><br><br><br>
+                        <b>The ! Operator</b><br><br>
+                        The next Operator is NOT operator, written as '!'. This operator reverse the result of expression it operates on. As expression evaluate to true, then this operator result it to False if operates. Here is an example showing use of ! operator. <br>
+                        <b>!(y<10)</b> <br><br> <br>
+                        <b>Hierarchy of Operators Rivisted</b><br><br>
+                        <table border="">
+                            <tr>
+                                <th>Operators</th>
+                                <th>Type</th>
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>Logical NOT</td>
+                            </tr>
+                            <tr>
+                                <td>* / %</td>
+                                <td>Arithmatic and Modulus</td>
+                            </tr>
+                            <tr>
+                                <td>+ -</td>
+                                <td>Arithmetic</td>
+                            </tr>
+                            <tr>
+                                <td>< > <= >=</td>
+                                <td>Relational</td>
+                            </tr>
+                            <tr>
+                                <td>== !=</td>
+                                <td>Relational</td>
+                            </tr>
+                            <tr>
+                                <td>&&</td>
+                                <td>Logical AND</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>Logical OR</td>
+                            </tr>
+                            <tr>
+                                <td>=</td>
+                                <td>Assignment</td>
+                            </tr>
+                        </table> 
+                    </p>
+                    <br>
+                    <p>
+                        <b>The Conditional Operators</b><br><br>
+                        The conditional operators <b>?</b> and <b>:</b> are often called ternary operators since they take three arguments. Syntax of it is as : <br>
+                        <em>condition</em> ? <em>Statement1</em> : <em>Statement2</em>; <br><br>
+                        when the condition is true the Statement1 will executed otherwise Statement2 will executed. Let understand this with an example. <br>
+                        <b>(a)</b> <em>int x,y;</em> <br>
+                        <em>scanf("%d", &x);</em> <br>
+                        <em>y = ( x>10 ? 5 : 8);</em><br>
+                        This Statement will store 5 in y if x is greater than 10, otherwise it will store 8 in y. <br><br>
+                        <b>(b)</b> <em>int i;</em><br>
+                        <em>scanf("%d", &i);</em> <br>
+                        <em>( i == 1 ? printf("Hurry! It's one") : printf("It's not one at all") );</em> <br><br>
+                        The limitation of the conditional operators is that after the <b>?</b> or after the <b>:</b>, only one C Statement can occur. <br><br><br><br>
+
+                        <b>Sample Problem</b> <br><br>
+                        <b>1.</b> If the three sides of a triangle are Entered through the keyboard, write a program to check whether the triangle is valid or not. The triangle is valid if the sum of two sides is greater than the largest of the three sides. <br><br>
+                        <img src="/ccodeimg/module03p6.png" alt="" class="largeprogram">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/default-monochrome-white.svg" alt="">
+                <h3>TEAM CODE HUNTERS</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <a href="/learning.html">Learning</a>
+                    </li>
+                    <li>
+                        <a href="https://www.concealedangle.in/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contactform.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/join.html">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>Copywrite 2021 by Team Code Hunters. Site developed by <span>Lav Sharma</span> </p>
+    </div>
+
+</body>
+</html>

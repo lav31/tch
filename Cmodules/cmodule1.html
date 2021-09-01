@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/modulestyle.css">
+    <title>C Module- Team Code Hunters</title>
+</head>
+<body>
+    <div class="topsection">
+        <h1>C Programming - Module 1</h1>
+        <div class="btns">
+            <a href="/Cmodules/Cwlcm.html" class="pvs">Previous</a>
+            <a href="/Cmodules/cmodule2.html" class="nxt">Next</a>
+        </div>
+    </div>
+    
+    <div class="learning">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2 class="hdteam">Getting Start with C</h2>
+                    <p>Hey there, before we begin to write programs in C, let’s find out the some information about see how it come into existence and how does it compare with other programming languages.
+                        C is a programming language developed at AT and T’s bell laboratories of USA in 1972 by Dennis Ritchie. It become popular cause it is simple and easy to use. 
+                        Major part of popular operating system like windows, Unix, Linux and Android are written in C. Moreover, if one is to extend the operating system to work with new devices, one need to write device driver programs. These programs are written exclusively in C.
+                    </p>
+                    <p><b>Constants, Variables and Keywords </b><br><br>
+                        The alphabet, digits and special symbols when properly combined for constants, variables and keywords. A constant is an entity that doesn’t change, whereas, a variable is an entity that may change. A keyboard is a word that carries special meaning. In programming languages, constant are often called literals whereas, variables are called identifiers. Let us now see what different types of constant and variable exist in C.
+                    </p>
+                    <p><b>Types of Constants </b><br><br>
+                        Constants can be divided into two major categories <br>
+                        1.	primary constant <br>
+                        2.	secondary constant <br>
+                    </p>
+                    <p><b>Rules for constructing an integer constant</b> <br>
+                        •	An integer constant must have at least one digit. <br>
+                        •	It must not have a decimal point. <br>
+                        •	It can be any of zero positive or negative. <br>
+                        •	No commas or blanks are allowed within an integer constant. <br>
+                        •	The allowable range for integer constant is minus 2147483648 to +2147483647.
+                    </p>
+                    <p><b>Rules for constructing real constants</b><br>
+                        •	Hey real constant must have at least one digit. <br>
+                        •	It must have a decimal point.<br>
+                        •	It can be either positive or negative. <br>
+                        •	No commas or blanks are allowed within a real constant. <br>
+                    </p>
+                    <p><b>Rules for constructing character constants</b><br>
+                        •	A character constant is a single alphabet, a single digit or a single special symbol enclosed within single inverted commas. <br>
+                        •	Both the inverted commas should point to the left. <br>
+                    </p>
+                    <p><b>Types of variables</b><br> <br>
+                        A particular type of variable can hold only the same type of constant. For example an integer variable can hold only an integer constant, a real variable can hold only a real constant and a character variable can hold only a character constant. <br>
+                        Variables are the name of memory cells so bet they can store some type of value that can be changed further that’s why it’s called variable because its value can be vary.
+                    </p>
+                    <p><b>Rules for constructing variable names</b> <br>
+                        •	A variable name is any combination of 1 to 31 alphabet’s, digits or underscores. Some compilers allow variable names whose length could be up to 247 characters. Do not create unnecessarily long variable name as it add to your typing effort. <br>
+                        •	The first character in the variable name must be an alphabet or underscore( _ ). The variable name can't be start with a digit. <br>
+                        •	A variable name don’t have any special symbol in it.
+                    </p>
+                    <p><b>C keywords</b><br><br>
+                        Keywords are the words whose meaning has already been explained to the C compiler. There are only 32 keywords every level in C. 
+                        The keywords should not be used as a variable names.
+                    </p>
+                    <p><b>First C Program</b> <br><br>
+                        <img src="/ccodeimg/frstprg.ong.png" alt="program" class="smallprogram">
+                    </p>
+                    <p><b>Form of a C program</b><br><br>
+                        There are certain rules about the form of C program that are applicable to all C programs. <br>
+                        •	Each instruction in a C program is written as a separate statement. <br>
+                        •	The statement in a program must appear In the same order in which we wish them to be executed. <br>
+                        •	All statements should be in lowercase letters. <br>
+                        •	C statement can be written anywhere in a given line. That’s why it is often called a free form language. <br>
+                        •	Every statement must end with a semicolon (;). <br>
+                    </p>
+                    <p><b>Comments in C program </b><br><br>
+                        Comments are used in a C programme to clarify either the purpose of the program or the purpose of the some statement in the program. It is a good purpose to beginning program with a comment indicating the purpose of the program. <br>
+                        •	Comments can be in small case, capital or a Combination. They should be enclosed within /* */ . <br>
+                        Example, /* First C program */ <br> <br>
+                        •	ANSI C permits Comment to be written in another way as follows <br>
+                        // it is a comment <br>
+                        But it is for a single line comment only.
+                    </p>
+                    <p><b>What is main() ?</b> <br><br>
+                        <strong>main()</strong> forms a crucial part of any C program. <br>
+                        main() is a function. It is a container for a set of statements. A C program May have multiple functions. If it contains only one function its name has to main().  All statements that belong to main() are enclosed within a pair of braces {}. <br><br>
+                        Like functions in a calculator, functions in C also return a value. <strong>main()</strong> function always return in <strong>int</strong> value, hence is there an int before <strong>main()</strong> it is known as return type of the function. The integer value that we are returning is 0. 0 indicates success. If statements in main() fail to do their intend work, we can return a non-zero number from here this would indicate failure.
+                    </p>
+                    <p><b>printf() and its purpose</b> <br><br> 
+                        C does not contain any keyword to display output on the screen. All output to screen is achieved using readymade library functions like <strong>printf()</strong>.
+                        •	To be able to use the printf() function it is necessary to use  <strong>#include "studio.h"</studio.h></strong>  at the beginning of the program. <strong>#include</strong> is a preprocessor directive its purpose will be clarified in further chapters. <br>
+                        •	The general form of printf() function is, <br>
+                        printf(“format string”, list of variable); <br>
+                            Format string can contain, <br>
+                          %f for printing real value, <br>
+                          %d for printing integer values, <br>
+                          %c for printing character values <br>
+                    </p>
+                    <p><b>Receiving Input</b> <br><br>
+                        Let’s say we want to calculate simple interest for some set of values. So we can write a program like this , <br><br>
+                        <img src="/ccodeimg/ssimpleintrst.png" alt="" class="middleprogram"> <br><br>
+                        This means that our program is not journal enough to calculate simple interest for any set of values without being required to make changes in the program. This is not a good practice. To make the program journal the program itself should ask the user to supply the value of principal value, number of years and rate through the keyboard during the execution this can be achieved using a function called scanf().
+                        For example, <br><br>
+                        <img src="/ccodeimg/csimpleintrst.png" alt="" class="middleprogram"> <br>
+                    </p>
+                    <br>
+                    <p><Strong>Some Sample Programs</Strong> <br><br>
+                      <b>1.</b> Vikas's basic salary is input through the keyboard. His dearness allowance is 40% of basic salary, and house rent allowance is 20% of basic salary. Write a Program to calculate his Gross Salary. <br><br>
+                       <img src="/ccodeimg/module01p1.png" alt="" class="middleprogram"><br><br>
+                       <b>2.</b>Temperature of a city in Fahrenheit degrees is input through the keyboard. Write a Program to convert this Temperature into Centigrade degrees. <br><br>
+                       <img src="/ccodeimg/module01p2.png" alt="">
+                    </p>
+                    <p>
+                        <b>Time to Brainstrom :)</b><br><br>
+                        <b>[1]</b> Which of the following are invalid C constants and Why ? <br>
+                        <table>
+                            <tr>
+                                <td>3.15</td>
+                                <td>3.25e2</td>
+                                <td>eLearning</td>
+                            </tr>
+                            <tr>
+                                <td>4 6 5 2</td>
+                                <td>"show"</td>
+                                <td>'Quest'</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <b>[2]</b> Which of the following are invalid variable names and Why ? <br><br>
+                        <table>
+                            <tr>
+                                <td>B'day</td>
+                                <td>int</td>
+                                <td>$hello</td>
+                            </tr>
+                            <tr>
+                                <td>_main()</td>
+                                <td>%name%</td>
+                                <td>1st</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <b>[3]</b> State whether the following statements are True of False: <br><br>
+                        <b>(a)</b> C language was developed by Dennis Ritchie. <br>
+                        <b>(b)</b> int, char, float, real, integer, character, main, printf and scanf all are keywords. <br>
+                        <b>(c)</b> Spaces cannot be present within a variable name. <br>
+                        <b>(d)</b> A real constant in C can be expressed in both Fractional and Exponential forms. <br><br>
+                        <b>[4]</b> Attempt the following questions: <br><br>
+                        <b>(1)</b> If the marks obtained by a student in five different subjects are input through the keyboard, write a program to find out the aggreagate marks and percentage marks obtained by the student. Assume that the maximum marks that can be obtained by a student is 100. <br><br>
+                        <b>(2)</b> Paper of size A0 has dimensions 1189 mm X 841 mm. Each subsequent size A(n) is defined as A(n-1) cut in half parallel to its shorter sides. Thus paper of size A1 would have dimensions 841mm X 594 mm. Write a program to calculate and print paper sizes A0, A1, A2,.... A8.  
+                    </p>
+                    <h3>End of module 1</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/default-monochrome-white.svg" alt="">
+                <h3>TEAM CODE HUNTERS</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li>
+                        <a href="/learning.html">Learning</a>
+                    </li>
+                    <li>
+                        <a href="https://www.concealedangle.in/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contactform.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="/join.html">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>Copywrite 2021 by Team Code Hunters. Site developed by <span>Lav Sharma</span> </p>
+    </div>
+
+</body>
+</html>
