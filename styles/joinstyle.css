@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0dffd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(45deg, rgb(250, 123, 197), rgb(152, 5, 179)); */
+    background: linear-gradient(45deg, #dd8dfd, #c813ff);
+
+}
+
+.learning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+}
+
+.learning .card{
+    position: relative;
+    min-width: 35rem;
+    height: 30rem;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .05),
+                 inset -5px -5px 5px rgba(255, 255, 255, .2),
+                 inset 5px 5px 5px rgba(0, 0, 0, .05),
+                 inset -5px -5px 5px rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.learning .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fbedfb1a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.learning .card .box .content{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.learning .card .box .content h2{
+    position: relative;
+    top: -2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.learning .card:hover .box .content h2{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.learning .card .box .content .hdteam{
+    position: relative;
+    top: -1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.learning .card .box .content ul{
+    margin: 1rem 1rem 1.4rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    transition: .5s;
+}
+
+
+.learning .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #ffffff;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #a74feb;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.learning .card .box .content a:hover{
+    color: #ff568f;
+}
+
+
+@media(max-width:700px){
+    .learning .card{
+        height: 35rem;
+        min-width: 420px;
+    }
+}
+
+.back{
+    margin: .5rem 0 2rem 0;
+}
+
+.back a{
+    padding: 8px 15px;
+    background: #fff;
+    color: #a74feb;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Merienda One', cursive;
+}

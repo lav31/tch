@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.topsection{
+    width: 100%;
+    min-height: 100%;
+    background-color: #dfb7fd;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topsection h1{
+    padding: 4rem 0;
+    text-align: center;
+    color: #63279b;
+}
+
+
+.learning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+    background-color: #dfb7fd93;
+    flex-direction: column;
+}
+
+.learning .card{
+    position: relative;
+    min-width: 50rem;
+    height: 40rem;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .05),
+                 inset -5px -5px 5px rgba(255, 255, 255, .2),
+                 inset 5px 5px 5px rgba(0, 0, 0, .05),
+                 inset -5px -5px 5px rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.learning .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fbedfbd5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.learning .card .box .content{
+    padding: 3rem;
+    text-align: center;
+    color: rgb(112, 112, 112);
+    overflow: scroll;
+}
+
+.learning .card .box .content h2{
+    margin: 1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    transition: 0.5s;
+    color: #333333f1;
+}
+
+
+.learning .card .box .content p{
+    margin: 2.5rem 1rem 2rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(119, 118, 118);
+    z-index: 1;
+    transition: .5s;
+}
+
+.learning .card .box .content .smallprogram{
+    height: 100%;
+    width: 85%;
+}
+
+.learning .card .box .content .middleprogram{
+    height: 33rem;
+    width: 37rem;
+}
+
+.learning .card .box .content .midlargeprogram{
+    height: 41rem;
+    width: 40rem;
+}
+
+.learning .card .box .content .largeprogram{
+    height: 48rem;
+    width: 40rem;
+}
+
+@media(max-width:700px){
+    .learning .card .box .content .smallprogram{
+        height: 22rem;
+        width: 19rem;
+    }
+    .learning .card .box .content .middleprogram{
+        height: 35rem;
+        width: 23rem;
+    }
+    .learning .card .box .content .midlargeprogram{
+        height:  40rem;
+        width: 35rem;
+    }
+    .learning .card .box .content .largeprogram{
+        height: 60rem;
+        width: 38rem;
+    }
+}
+
+table{
+    margin-left: 1rem;
+}
+
+th,td{
+    padding: 5px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns a{
+    text-decoration: none;
+    font-family: 'Merienda One', cursive;
+    margin: .5rem 3rem;
+    font-size: 1.2rem;
+}
+
+.btns a:hover{
+    color: #fa9ffad5;
+}
+
+
+@media(max-width:700px){
+    .learning .card{
+        height: 37rem;
+        min-width: 420px;
+    }
+}
+
+.footer{
+    padding: 1rem 0;
+    background-color: #b70ae2e8;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0 6rem 0;
+}
+
+.footer-logo{
+    display: flex;
+}
+
+
+.footer-logo img{
+    height: 6rem;
+    width: 10rem;
+    position: relative;
+    top: -1.2rem;
+    left: -.5rem;
+}
+
+.footer-logo h3{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    left: -2.5rem;
+    top: .5rem;
+}
+
+@media(max-width: 500px){
+    .footer-logo{
+        flex-direction: column;
+    }
+    .footer-logo h3{
+        position: relative;
+        left: .5rem;
+    }
+}
+
+.footer-links ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width: 750px){
+    .footer-links ul{
+        flex-direction: column;
+    }
+}
+
+.footer-links li{
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+.footer-links li a{
+    padding: .7rem 0.5rem;
+    font-family: 'Merienda One', cursive;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.555);
+    /* padding: 1rem; */
+    display: block;
+}
+
+.footer-links li a:hover{
+    color: #fff;
+}
+
+.footer p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.685);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+}
+.footer span{
+    color: rgb(255, 255, 255);
+}
