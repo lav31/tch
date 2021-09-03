@@ -174,7 +174,7 @@ section .wave::after{
         height: 25rem;
         width: 23rem;
         float: right;
-        margin-left: 6rem;
+        margin-left: 12rem;
     }
 }
 
@@ -386,9 +386,9 @@ section .wave::after{
 @media(max-width:650px){
     .team img{
         height: 25rem;
-        width: 22rem;
+        width: 18rem;
         float: left;
-        margin-right: 6rem;
+        margin-right: 5rem;
     }
 }
 
