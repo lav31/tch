@@ -169,6 +169,15 @@ section .wave::after{
     margin-left: 4rem;
 }
 
+@media(max-width:650px){
+    .wlcm{
+        height: 25rem;
+        width: 23rem;
+        float: right;
+        margin-left: 6rem;
+    }
+}
+
 .wlcm-heading{
     padding: 2rem 4rem;
 }
@@ -372,6 +381,15 @@ section .wave::after{
     width: 25rem;
     float: left;
     margin-right: 3.5rem;
+}
+
+@media(max-width:650px){
+    .team img{
+        height: 25rem;
+        width: 22rem;
+        float: left;
+        margin-right: 6rem;
+    }
 }
 
 .team h2{
