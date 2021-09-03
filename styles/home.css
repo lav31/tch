@@ -388,7 +388,8 @@ section .wave::after{
         height: 25rem;
         width: 18rem;
         float: left;
-        margin-right: 5rem;
+        position: absolute;
+        left: 1px;
     }
 }
 
