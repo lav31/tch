@@ -383,13 +383,16 @@ section .wave::after{
     margin-right: 3.5rem;
 }
 
-@media(max-width:650px){
+@media(max-width:550px){
+    .team{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+    }
     .team img{
-        height: 25rem;
-        width: 18rem;
-        float: left;
-        position: absolute;
-        left: 1px;
+        height: 370px;
+        width: 230px;
     }
 }
 
