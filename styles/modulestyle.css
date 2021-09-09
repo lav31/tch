@@ -147,7 +147,7 @@ th,td{
 @media(max-width:700px){
     .learning .card{
         height: 37rem;
-        min-width: 420px;
+        min-width: 25rem;
     }
 }
 
