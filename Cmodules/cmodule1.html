@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/modulestyle.css">
     <title>C Module- Team Code Hunters</title>
+    <style>
+        tr > td {
+            border-right: 1px solid black;
+            border-bottom: 1px solid grey;
+        }
+        tr > td:last-child {
+            border-right: none;
+        }
+        
+    </style>
 </head>
 <body>
     <div class="topsection">
@@ -20,8 +30,8 @@
             <div class="box">
                 <div class="content">
                     <h2 class="hdteam">Getting Start with C</h2>
-                    <p>Hey there, before we begin to write programs in C, let’s find out the some information about see how it come into existence and how does it compare with other programming languages.
-                        C is a programming language developed at AT and T’s bell laboratories of USA in 1972 by Dennis Ritchie. It become popular cause it is simple and easy to use. 
+                    <p>Hey there, before we begin to write programs in C, let’s find out the some information about see how it came into existence and how does it compare with other programming languages.
+                        C is a programming language developed at <b> AT and T’s bell laboratories</b> in USA in 1972 by <b> Dennis Ritchie </b>. It become popular cause it is simple and easy to use. 
                         Major part of popular operating system like windows, Unix, Linux and Android are written in C. Moreover, if one is to extend the operating system to work with new devices, one need to write device driver programs. These programs are written exclusively in C.
                     </p>
                     <p><b>Constants, Variables and Keywords </b><br><br>
@@ -88,7 +98,7 @@
                     </p>
                     <p><b>printf() and its purpose</b> <br><br> 
                         C does not contain any keyword to display output on the screen. All output to screen is achieved using readymade library functions like <strong>printf()</strong>.
-                        •	To be able to use the printf() function it is necessary to use  <strong>#include "studio.h"</studio.h></strong>  at the beginning of the program. <strong>#include</strong> is a preprocessor directive its purpose will be clarified in further chapters. <br>
+                        •	To be able to use the printf() function it is necessary to use  <strong>#include "stdio.h" (It can also be written as #include &lt;stdio.h&gt;)</strong>  at the beginning of the program. <strong>#include</strong> is a preprocessor directive it's purpose will be clarified in further chapters. <br>
                         •	The general form of printf() function is, <br>
                         printf(“format string”, list of variable); <br>
                             Format string can contain, <br>
@@ -142,10 +152,10 @@
                         </table>
                     </p>
                     <p>
-                        <b>[3]</b> State whether the following statements are True of False: <br><br>
+                        <b>[3]</b> State whether the following statements are True or False: <br><br>
                         <b>(a)</b> C language was developed by Dennis Ritchie. <br>
                         <b>(b)</b> int, char, float, real, integer, character, main, printf and scanf all are keywords. <br>
-                        <b>(c)</b> Spaces cannot be present within a variable name. <br>
+                        <b>(c)</b> Variable name cann't contain spaces. <br>
                         <b>(d)</b> A real constant in C can be expressed in both Fractional and Exponential forms. <br><br>
                         <b>[4]</b> Attempt the following questions: <br><br>
                         <b>(1)</b> If the marks obtained by a student in five different subjects are input through the keyboard, write a program to find out the aggreagate marks and percentage marks obtained by the student. Assume that the maximum marks that can be obtained by a student is 100. <br><br>
@@ -183,7 +193,7 @@
                 </ul>
             </div>
         </div>
-        <p>Copywrite 2021 by Team Code Hunters. Site developed by <span>Lav Sharma</span> </p>
+        <p>Copyright &copy; 2021 by Team Code Hunters. Site developed by <span>Lav Sharma</span> </p>
     </div>
 
 </body>
